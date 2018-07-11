@@ -1,0 +1,380 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background: url("img/worn_dots.png");
+}
+
+
+.header
+{
+	font-family: 'Lobster Two', cursive;
+	color: #7f8c8d;
+}
+
+.title:first-letter 
+{
+	height:100%;
+	color: #A70C00;
+	font-weight: bold; 
+	font-size: 200% 
+	float: left;
+	font-size: 28;
+}
+
+
+.title
+{
+	margin: 5px;
+	font-family: 'Lobster Two', cursive;
+	color: #7f8c8d;
+	font-size: 28;
+	float: left;
+}
+
+.tab
+{
+	margin: 1px 3px -9px 3px;
+	border: 3px solid #ecf0f1;
+	background: url("img/g1.png");
+	background-size: 100%;
+	border-radius: 3px;
+	padding: 3px;
+	color: #a0a0a0;
+	font-size: 20;
+	float: left;
+
+}
+
+
+.tab:hover
+{
+	background: #7f8c8d;
+	color: #ecf0f1;
+	border-color: #7f8c8d;
+}
+
+.tab:hover:first-letter
+{
+	color: #FF7C6C;
+}
+
+.tab:first-letter
+{
+
+	color: #A70C00;
+	font-weight: bold; 
+	font-size: 200% 
+
+	font-size: 28;
+}
+
+.StartBtn
+{
+	margin: 1px 3px -9px 3px;
+	border: 3px solid #ecf0f1;
+	background: url("img/g1.png");
+	background-size: 100%;
+	border-radius: 3px;
+	padding: 3px;
+	color: #a0a0a0;
+	font-size: 26;
+    font-family: 'Noto Sans';
+    cursor: pointer;
+}
+
+
+.StartBtn:hover 
+{
+	background: #7f8c8d;
+	color: #ecf0f1;
+	border-color: #7f8c8d;
+}
+
+.StartBtn:active
+{
+	background: #7f8c8d;
+	color: #ecf0f1;
+	border-color: #FF7C6C;
+}
+
+.StartBtn:hover:first-letter
+{
+	color: #FF7C6C;
+}
+
+.StartBtn:first-letter
+{
+
+	color: #A70C00;
+	font-weight: bold; 
+	font-size: 200% 
+
+	font-size: 28;
+}
+
+.activeTab
+{
+	border-color: #7f8c8d;
+}
+
+
+.clanNameInput
+{
+	border: 3px solid #bdc3c7;
+	font-size: 24;
+	font-family: 'Noto Sans';
+	border: 3px solid #bdc3c7;
+    font-size: 24;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    color: #7f8c8d;
+    width: 100%;
+}
+
+.inputAlert
+{
+	background: #FFCCBC;
+	border-color: #c0392b;
+}
+
+.content
+{
+	width:100%;
+	border-top: 3px solid #ecf0f1;
+	color: #7f8c8d;
+	padding: 3px;
+	font-family: 'Noto Sans';
+}
+
+hr
+{
+	border: 2px solid #ecf0f1;
+}
+
+.centerBox
+{
+	margin: 10px 30%;
+	text-align: center;
+	font-size: 24;
+	color: #7f8c8d;
+	
+
+}
+
+
+.radiowrap {
+  display: table-cell;
+  vertical-align: middle;
+}
+.radiowrap .RadioBtnsWrap {
+  display: inline-block;
+  position: relative;
+  width: 140px;
+}
+.radiowrap .RadioBtnsWrap label {
+  display: inline-block;
+  position: relative;
+  margin-left: 40px;
+  text-align: left;
+  height: 40px;
+  line-height: 40px;
+  min-width: 100px;
+
+}
+.radiowrap .RadioBtnsWrap label:not(:nth-of-type(1)) {
+  margin-top: 17px;
+}
+.radiowrap .Radio {
+  -webkit-appearance: none;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+}
+
+
+.radiowrap .RadioBtnsWrap label::after {
+  content: 'x';
+  color: transparent;
+  position: absolute;
+  left: -44px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  background-color: #FFFFFF;
+  display: inline-block;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-color: #7f8c8d;
+  border-style: solid;
+  border-width: 8px;
+  transition: background-color 0.6s, border-width 0.4s, width 0.6s, height 0.6s, left 0.6s;
+  -webkit-transition: background-color 0.6s, border-width 0.4s, width 0.6s, height 0.6s, left 0.6s;
+  -webkit-box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.75);
+}
+.radiowrap .Radio:checked + label::after {
+  background-color: #FF7C6C;
+  width: 20px;
+  height: 20px;
+  left: -47px;
+  border-width: 6px;
+  -webkit-box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.75), inset 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.75), inset 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+}
+.radiowrap .RadioBtnsWrap label:not(:nth-of-type(1))::before {
+  ##content: '';
+  position: absolute;
+  left: -35px;
+  height: 57px;
+  width: 8px;
+  display: inline-block;
+  background-color: #ecf0f1;
+  -webkit-box-shadow: 1px 4px 2px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 4px 2px 1px rgba(0, 0, 0, 0.25);
+}
+.radiowrap .RadioBtnsWrap label::before {
+  bottom: 28px;
+}
+.radiowrap .Radio:checked + label + input + label::before {
+  height: 52px;
+  transition: height .0s linear .3s;
+  -webkit-transition: height .0s linear .3s;
+}
+
+.infoTable
+{
+	border-collapse: collapse;
+	border-color:black;
+
+}
+
+.infoTableCell
+{
+	margin: 3px;
+	padding: 2px;
+}
+
+.infoTableTitle
+{
+	margin: 3px;
+	padding: 2px;
+	background: #ecf0f1;
+	padding-right: 10px;
+}
+
+.playerLine
+{
+	font-size: 18;
+	font-family: 'Noto Sans';
+  border-radius: 5px;
+  text-align: left;
+  #width: 100%;
+  margin: -2px;
+  margin-bottom: 3px;
+  #width: CALC( 100% - 10px );
+  padding: 5px;
+}
+
+.playerLineIdle
+{
+	border: 2px solid #bdc3c7;
+  background: #e0e0e0;
+  color: #7f8c8d;
+}
+
+.playerLineLUP
+{
+	border: 2px solid #22A7F0;
+  background: url("img/576035.jpg");
+  color: #000000aa;
+}
+
+
+.playerLineActive
+{
+	border: 2px solid #005c01;
+  background: url("img/setwalls.ru-48679.jpg");
+  color: #ffffffaa;
+}
+
+.popupBox
+{
+  margin: 0;
+  padding: 0;
+  background: #000000c4;
+  z-index: 60;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.popupBoxContent
+{
+  background: url("img/2-fon-dlya-sayta.png");
+  padding: 10px;
+  position: fixed;
+  border-radius: 5px;
+  top: 20%;
+  bottom: 20%;
+  left: 20%;
+  right: 20%;
+}
+
+.contentbox
+{
+  margin: 0;
+  padding: 0;
+  z-index: 50;
+  width: 100%;
+  position: absolute;
+}
+
+.popupBoxCloseBtn
+{
+  background: url("img/2-fon-dlya-sayta.png");
+  top: CALC( 20% - 32px );
+  left: 80%;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.popupBoxCloseBtn:hover
+{
+  background: #aa0000c4;
+}
+
+.playerBtn
+{
+  background: url("img/wallpapers_b4847f92360039cc0354a277497688d1.png");
+  min-height: 20px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 4px;
+  background: #ffffffaa;
+  color: #00aa00;
+  cursor: pointer;
+}
+
+.playerBtn:hover
+{
+  background: #00ff00a0;
+  color: #555;
+
+}

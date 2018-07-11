@@ -1,0 +1,87 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Haddan Clan Simulator</title>
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,vietnamese' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Cutive+Mono|Inconsolata|Share+Tech+Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+<!--   
+font-family: 'Inconsolata', monospace;
+font-family: 'Anonymous Pro', monospace;
+font-family: 'Share Tech Mono', monospace;
+font-family: 'Cutive Mono', monospace;
+-->
+<link href="https://fonts.googleapis.com/css?family=Ranchers" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="index.css">
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+<script type="text/javascript" src="jquery.cookie.js"></script>
+<script src="jquery.base64.js"></script>
+<script src="str.js"></script>
+<script src="hcm.js"></script>
+</head>
+<body>
+
+<div class="popupBox" id="popupBox" style="display:none">
+	<div class="popupBoxCloseBtn"onclick="hideMsgBox();"><img src="img/Gnome-Window-Close-32.png"/></div>
+	<div class="popupBoxContent" id="popupBoxContent"></div>
+</div>
+
+<div class="contentbox">
+	<pre id="logBox" style="display:none"></pre>
+	<div class = "header" id="headRow">
+		<div class="title" id = "clanName">Haddan Clan Simulator</div>
+		<!--<div id="clanName" class="title" style="display:none"></div> -->
+		<div class="tab" id="infoTab" onclick="selectTab('clanInfoScreen','infoTab');">Информация</div>
+		<div class="tab" id="playersTab" onclick="selectTab('playersScreen','playersTab');">Состав клана</div>
+		<div class="tab" id="invTab" onclick="selectTab('invScreen','invTab');">Инвентарь</div>
+
+		<div class="tab"  onclick="runTest();">TEST</div>
+	</div>
+	<br>
+	<div class="content" id="welcomeScreen">
+		<div class="centerBox">
+			<span>Имя клана:</span><br>
+			<input type="text" class="clanNameInput" id="clanNameInput">
+			<hr>
+			<span>Сложность:</span><br>
+			<div style="display: table; text-align: center;">
+				<div class="radiowrap">
+					<div class="RadioBtnsWrap">
+						<input type="radio" name="radio1" checked id="radio11" class="Radio" />
+						<label for="radio11">Песочница</label>
+
+						<input type="radio" name="radio1" id="radio12" class="Radio" />
+						<label  for="radio12">Легко</label>
+
+						<input type="radio" name="radio1" id="radio13" class="Radio" />
+						<label  for="radio13">Норм</label>
+
+						<input type="radio" name="radio1" id="radio14" class="Radio" />
+						<label  for="radio14">Выживалка</label>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="StartBtn" onclick="startGame();">Поехали!</div>
+		</div>
+
+
+	</div>
+	<div class="content" id="clanInfoScreen">
+	<table class="infoTable">
+		<tr><td class="infoTableTitle">Баланс</td><td id="info_money">0</td></tr>
+		<tr><td class="infoTableTitle">Размер клана</td><td id="info_plyerscount">0</td></tr>
+	</table>
+	</div>
+	<div class="content" id="playersScreen">
+		
+
+	</div>
+	<div class="content" id="invScreen">44</div>
+
+	<div class="StartBtn" onclick="addPlayer();">+player</div>
+</div>
+</body>
+</html>
