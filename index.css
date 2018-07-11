@@ -2,7 +2,7 @@ body
 {
 	margin: 0px;
 	padding: 0px;
-	background: url("img/worn_dots.png");
+	background: url("img/bg1.png");
 }
 
 
@@ -79,8 +79,8 @@ body
 	padding: 3px;
 	color: #a0a0a0;
 	font-size: 26;
-    font-family: 'Noto Sans';
-    cursor: pointer;
+  font-family: 'Noto Sans';
+  cursor: pointer;
 }
 
 
@@ -125,12 +125,12 @@ body
 	font-size: 24;
 	font-family: 'Noto Sans';
 	border: 3px solid #bdc3c7;
-    font-size: 24;
-    outline: none;
-    border-radius: 5px;
-    text-align: center;
-    color: #7f8c8d;
-    width: 100%;
+  font-size: 24;
+  outline: none;
+  border-radius: 5px;
+  text-align: center;
+  color: #7f8c8d;
+  width: 100%;
 }
 
 .inputAlert
@@ -163,12 +163,14 @@ hr
 
 }
 
-
-.radiowrap {
+.radiowrap 
+{
   display: table-cell;
   vertical-align: middle;
 }
-.radiowrap .RadioBtnsWrap {
+
+.radiowrap .RadioBtnsWrap 
+{
   display: inline-block;
   position: relative;
   width: 140px;
@@ -183,10 +185,13 @@ hr
   min-width: 100px;
 
 }
-.radiowrap .RadioBtnsWrap label:not(:nth-of-type(1)) {
+.radiowrap .RadioBtnsWrap label:not(:nth-of-type(1)) 
+{
   margin-top: 17px;
 }
-.radiowrap .Radio {
+
+.radiowrap .Radio 
+{
   -webkit-appearance: none;
   height: 0;
   width: 0;
@@ -197,8 +202,8 @@ hr
   border: none;
 }
 
-
-.radiowrap .RadioBtnsWrap label::after {
+.radiowrap .RadioBtnsWrap label::after 
+{
   content: 'x';
   color: transparent;
   position: absolute;
@@ -222,6 +227,7 @@ hr
   -webkit-box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.75);
 }
+
 .radiowrap .Radio:checked + label::after {
   background-color: #FF7C6C;
   width: 20px;
@@ -231,6 +237,7 @@ hr
   -webkit-box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.75), inset 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.75), inset 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
 }
+
 .radiowrap .RadioBtnsWrap label:not(:nth-of-type(1))::before {
   ##content: '';
   position: absolute;
@@ -242,9 +249,11 @@ hr
   -webkit-box-shadow: 1px 4px 2px 1px rgba(0, 0, 0, 0.25);
   box-shadow: 1px 4px 2px 1px rgba(0, 0, 0, 0.25);
 }
+
 .radiowrap .RadioBtnsWrap label::before {
   bottom: 28px;
 }
+
 .radiowrap .Radio:checked + label + input + label::before {
   height: 52px;
   transition: height .0s linear .3s;
@@ -295,7 +304,7 @@ hr
 .playerLineLUP
 {
 	border: 2px solid #22A7F0;
-  background: url("img/576035.jpg");
+  background: url("img/bg2.jpg");
   color: #000000aa;
 }
 
@@ -303,7 +312,7 @@ hr
 .playerLineActive
 {
 	border: 2px solid #005c01;
-  background: url("img/setwalls.ru-48679.jpg");
+  background: url("img/bg3.jpg");
   color: #ffffffaa;
 }
 
@@ -322,7 +331,7 @@ hr
 
 .popupBoxContent
 {
-  background: url("img/2-fon-dlya-sayta.png");
+  background: url("img/bg4.png");
   padding: 10px;
   position: fixed;
   border-radius: 5px;
@@ -343,7 +352,7 @@ hr
 
 .popupBoxCloseBtn
 {
-  background: url("img/2-fon-dlya-sayta.png");
+  background: url("img/bg4.png");
   top: CALC( 20% - 32px );
   left: 80%;
   width: 32px;
@@ -361,7 +370,7 @@ hr
 
 .playerBtn
 {
-  background: url("img/wallpapers_b4847f92360039cc0354a277497688d1.png");
+  background: url("img/bg5.png");
   min-height: 20px;
   padding: 5px;
   text-align: center;

@@ -11,7 +11,7 @@ function log_message(msg, isError)
 	{
 		status = "[ERROR] ";
 	}
-	$("#logBox").append("<!--"+status+msg+"-->\n");
+	$("#logBox").append("<!--" + status + msg + "-->\n");
 	//refreshSnapshotsList();
 }
 
@@ -45,7 +45,7 @@ class player
 
     buildHtml()
     {
-    	var idPrefix = "playerLine_"+this.id+"_";
+    	var idPrefix = "playerLine_" + this.id + "_";
     	var blockClass = "playerLine playerLineIdle";
     	if(this.activity == etPlayerActivites.LEVELUP)
     	{
@@ -69,9 +69,9 @@ class player
 		}
 
     	var block = "\n<div class='"+blockClass+"' id='"+idPrefix+"box'>";
-		block += "<span>"+this.name+"["+this.lvl+"]</span>";
-		block += "<span class='playerBtn' onclick='gameData.startJob("+this.id+",3);rebuildPlayers();'>"+jorkBtnLabel+"</span>";
-		block += "<span class='playerBtn' onclick='gameData.startJob("+this.id+",2);rebuildPlayers();'>"+levelUpBtnLabel+"</span>";
+		block += "<span>" + this.name + "[" + this.lvl + "]</span>";
+		block += "<span class='playerBtn' onclick='gameData.startJob(" + this.id + ",3);rebuildPlayers();'>"+jorkBtnLabel+"</span>";
+		block += "<span class='playerBtn' onclick='gameData.startJob(" + this.id + ",2);rebuildPlayers();'>"+levelUpBtnLabel+"</span>";
     	block += "</div>"
     	return block;
     }
